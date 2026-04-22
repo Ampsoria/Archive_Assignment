@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สถานที่ท่องเที่ยว - จังหวัดเลย</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+        body { font-family: 'Sarabun', sans-serif; margin: 0; padding: 0; background-color: #eef6f9; }
+        header { background-color: #0277bd; color: white; padding: 25px; text-align: center; }
+        nav { background-color: #0288d1; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { color: #b3e5fc; }
+        .container { width: 80%; margin: 30px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .place-card { display: flex; border: 1px solid #e1f5fe; background: #fbfdff; margin-bottom: 25px; border-radius: 8px; overflow: hidden; }
+        .place-card img { width: 40%; object-fit: cover; }
+        .place-content { padding: 20px; width: 60%; }
+        h2 { color: #01579b; border-bottom: 2px solid #0288d1; padding-bottom: 10px; }
+        h3 { color: #0277bd; margin-top: 0; }
+        footer { background-color: #01579b; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+        
+        /* รองรับมือถือ */
+        @media (max-width: 768px) {
+            .place-card { flex-direction: column; }
+            .place-card img, .place-content { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>เช็คอิน...ที่เที่ยวเมืองเลย</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าแรก (ข้อมูลจังหวัด)</a>
+        <a href="one.html">สถานที่ท่องเที่ยว</a>
+        <a href="two.html">ของดีประจำจังหวัด</a>
+    </nav>
+
+    <div class="container">
+        <h2>แหล่งท่องเที่ยวห้ามพลาด</h2>
+
+        <div class="place-card">
+            <img src="place1.jpg" alt="อุทยานแห่งชาติภูกระดึง">
+            <div class="place-content">
+                <h3>1. อุทยานแห่งชาติภูกระดึง</h3>
+                <p>สถานที่ท่องเที่ยวยอดนิยมตลอดกาล นักท่องเที่ยวต้องเดินเท้าขึ้นเขาเพื่อไปชมธรรมชาติ ป่าสน และจุดชมวิวพระอาทิตย์ขึ้นที่ผานกแอ่น และพระอาทิตย์ตกที่ผาหล่มสัก</p>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="place2.jpg" alt="ถนนคนเดินเชียงคาน">
+            <div class="place-content">
+                <h3>2. ถนนคนเดินเชียงคาน</h3>
+                <p>สัมผัสวิถีชีวิตริมฝั่งโขง ชมบ้านไม้เก่าแก่ที่อนุรักษ์ไว้อย่างดี ในช่วงเย็นจะเปลี่ยนเป็นถนนคนเดิน มีอาหารพื้นเมืองและของที่ระลึกจำหน่าย บรรยากาศสุดโรแมนติก</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>จัดทำโดย 661283 กรวิชญ์ พุทธบารมี</p>
+    </footer>
+
+</body>
+</html>

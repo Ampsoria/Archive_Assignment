@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - JavaScript ข้อ 2: Array and Object</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+        button {
+            padding: 8px 20px;
+            cursor: pointer;
+            border: 1px solid #888;
+            border-radius: 4px;
+            background: #f0f0f0;
+        }
+        button:hover {
+            background: #e0e0e0;
+        }
+        .output {
+            margin-top: 12px;
+            padding: 12px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: none;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Assignment - JavaScript ข้อ 2</h1>
+    <p style="text-align:center;">Array and Object</p>
+
+    <!-- ข้อที่ 1 -->
+    <div class="section">
+        <h2>ข้อที่ 1: การจัดการข้อมูลพื้นฐานใน Array</h2>
+        <button onclick="showResult1()">แสดงผลลัพธ์</button>
+        <div class="output" id="result1"></div>
+    </div>
+
+    <!-- ข้อที่ 2 -->
+    <div class="section">
+        <h2>ข้อที่ 2: การกรอง (Filter) และการอ่านข้อมูล (Map)</h2>
+        <button onclick="showResult2()">แสดงผลลัพธ์</button>
+        <div class="output" id="result2"></div>
+    </div>
+
+    <!-- ข้อที่ 3 -->
+    <div class="section">
+        <h2>ข้อที่ 3: การแก้ไขและถอดข้อมูลด้วย Splice</h2>
+        <button onclick="showResult3()">แสดงผลลัพธ์</button>
+        <div class="output" id="result3"></div>
+    </div>
+
+    <!-- ข้อที่ 4 -->
+    <div class="section">
+        <h2>ข้อที่ 4: การวนลูปและการตรวจสอบเงื่อนไข (Loop & If-else)</h2>
+        <button onclick="showResult4()">แสดงผลลัพธ์</button>
+        <div class="output" id="result4"></div>
+    </div>
+
+    <!-- ข้อที่ 5 -->
+    <div class="section">
+        <h2>ข้อที่ 5: การเขียนโปรแกรมเชิงวัตถุ (OOP) เบื้องต้น</h2>
+        <button onclick="showResult5()">แสดงผลลัพธ์</button>
+        <div class="output" id="result5"></div>
+    </div>
+
+    <script>
+        // ข้อที่ 1
+        function showResult1() {
+            let fruits = ["ส้ม", "มะม่วง", "ลำไย", "มังคุด", "ทุเรียน"];
+            let out = "";
+            out += "Array เริ่มต้น: [" + fruits.join(", ") + "]<br>";
+
+            fruits.push("แตงโม");
+            out += 'หลัง push("แตงโม"): [' + fruits.join(", ") + "]<br>";
+
+            fruits.unshift("แอปเปิ้ล");
+            out += 'หลัง unshift("แอปเปิ้ล"): [' + fruits.join(", ") + "]";
+
+            let el = document.getElementById("result1");
+            el.innerHTML = out;
+            el.style.display = "block";
+        }
+
+        // ข้อที่ 2
+        function showResult2() {
+            let employees = [
+                { name: "กรภัทร์", job: "นักบิน", salary: 150000 },
+                { name: "จารวี", job: "มัณฑนากร", salary: 55000 },
+                { name: "นารีรัตน์", job: "นักวิเคราะห์ระบบ", salary: 45000 },
+                { name: "ภริตา", job: "พยาบาล", salary: 35000 },
+                { name: "รสิตา", job: "แพทย์", salary: 75000 }
+            ];
+
+            let highSalary = employees.filter(emp => emp.salary >= 50000);
+            let names = highSalary.map(emp => emp.name);
+
+            let out = "ข้อมูลพนักงานทั้งหมด:<br>";
+            employees.forEach(emp => {
+                out += "  • " + emp.name + " / " + emp.job + " / เงินเดือน " + emp.salary.toLocaleString() + " บาท<br>";
+            });
+            out += "<br>พนักงานที่มีเงินเดือน >= 50,000 บาท (filter):<br>";
+            highSalary.forEach(emp => {
+                out += "  • " + emp.name + " / " + emp.job + " / " + emp.salary.toLocaleString() + " บาท<br>";
+            });
+            out += "<br>ชื่อพนักงานที่ผ่านเงื่อนไข (map): [" + names.join(", ") + "]";
+
+            let el = document.getElementById("result2");
+            el.innerHTML = out;
+            el.style.display = "block";
+        }
+
+        // ข้อที่ 3
+        function showResult3() {
+            let data = ["Avocado", "Banana", "Coconut", "Durian", "Kiwi"];
+            let out = "Array เริ่มต้น: [" + data.join(", ") + "]<br>";
+
+            data.splice(1, 2, "Lemon");
+            out += 'หลัง splice(1, 2, "Lemon"): [' + data.join(", ") + "]";
+
+            let el = document.getElementById("result3");
+            el.innerHTML = out;
+            el.style.display = "block";
+        }
+
+        // ข้อที่ 4
+        function showResult4() {
+            let scores = [70, 5, 75, 10, 80, 95, 25, 30, 15, 45];
+            let out = "Array คะแนน: [" + scores.join(", ") + "]<br><br>";
+
+            for (let score of scores) {
+                if (score >= 50) {
+                    out += "คะแนน " + score + " → ผ่าน<br>";
+                } else {
+                    out += "คะแนน " + score + " → ไม่ผ่าน<br>";
+                }
+            }
+
+            let el = document.getElementById("result4");
+            el.innerHTML = out;
+            el.style.display = "block";
+        }
+
+        // ข้อที่ 5
+        function showResult5() {
+            class Student {
+                constructor(stdID, stdName, dept, fac) {
+                    this.stdID = stdID;
+                    this.stdName = stdName;
+                    this.dept = dept;
+                    this.fac = fac;
+                }
+
+                study() {
+                    return "นักศึกษากำลังเรียน";
+                }
+            }
+
+            let student1 = new Student(660001, "กิตติ", "วิทยาการคอมพิวเตอร์", "วิทยาศาสตร์และเทคโนโลยี");
+
+            let out = "ข้อมูลนักศึกษา:<br>";
+            out += "  • รหัสนักศึกษา (stdID): " + student1.stdID + "<br>";
+            out += "  • ชื่อ-สกุล (stdName): " + student1.stdName + "<br>";
+            out += "  • สาขาวิชา (dept): " + student1.dept + "<br>";
+            out += "  • คณะวิชา (fac): " + student1.fac + "<br>";
+            out += "<br>เรียกใช้ study(): " + student1.study();
+
+            let el = document.getElementById("result5");
+            el.innerHTML = out;
+            el.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <META charset = "UFT-8">
+  <TITLE>Welecom to my website       </TITLE>
+  
+ </HEAD>
+
+ <BODY style="background-color:pink">
+	<div>
+		<h1 style="color:rgb(247,53,71); text-align:center;">เว็บไซต์แนะนำตัวเอง</h1>
+	</div>
+	<br><hr><br>
+	<p style="font-size:70px; color: Green">รูปภาพของฉัน</p> <br>
+	<div style="background-color:#0FF; font-size:70px;">
+	<marquee direction="RIGHT" scrollamount="20">
+		<img src="picture/pic1.jpg"/>&nbsp;&nbsp;&nbsp;
+		<img src="picture/pic2.jpg"/>&nbsp;&nbsp;&nbsp;
+		<img src="picture/pic3.jpg"/>&nbsp;&nbsp;&nbsp;
+	</marquee>
+	</div>
+	<br><hr><br>
+	<!--About Link-->
+	<!--The href Attribute-->
+	<p style="background-color: #083">
+		<a href="https://www.w3schools.com"><h2>This is W3School</h2></a>
+		<br><br>
+		<a href= "list.html"><h2>GO TO LIST(html)</h2></a>
+		<br><br>
+		<a hret = "mailto:yuwathida.chi@hcu.ac.th">
+			<img src="button/contactl.jpg" width="200" height=60/>
+		</a>
+		<br><br>
+		<a href = "https://www.google.com">
+			<img src="button/google.png" width="200" height="60"/>
+		</a>
+</p>
+
+ </BODY>
+</HTML>

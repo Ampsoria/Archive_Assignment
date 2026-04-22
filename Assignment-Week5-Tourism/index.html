@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวภาคเหนือ | Northern Thailand Tourism</title>
+    <meta name="description" content="ค้นพบสถานที่ท่องเที่ยวสุดมหัศจรรย์ในภาคเหนือของประเทศไทย เชียงใหม่ เชียงราย ลำปาง น่าน แพร่ ลำพูน">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts - Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-geo-alt-fill"></i>
+                เหนือสุดแดนสยาม
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">เกี่ยวกับ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#attractions">สถานที่ท่องเที่ยว</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#culture">วัฒนธรรม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">แกลเลอรี่</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 hero-content">
+                    <div class="hero-badge">
+                        <i class="bi bi-stars"></i>
+                        สัมผัสมนต์เสน่ห์แห่งล้านนา
+                    </div>
+                    <h1 class="hero-title">
+                        ท่องเที่ยว<span>ภาคเหนือ</span><br>ดินแดนแห่งขุนเขา
+                    </h1>
+                    <p class="hero-description">
+                        สัมผัสความงดงามของธรรมชาติ วัฒนธรรมล้านนาอันเก่าแก่ อาหารเหนือรสเลิศ
+                        และอากาศเย็นสบายท่ามกลางขุนเขาที่รอคุณมาค้นพบ
+                    </p>
+                    <div class="hero-buttons d-flex gap-3 flex-wrap">
+                        <a href="#attractions" class="btn btn-gold">
+                            <i class="bi bi-compass me-2"></i>สำรวจสถานที่
+                        </a>
+                        <a href="#contact" class="btn btn-outline-white">
+                            <i class="bi bi-envelope me-2"></i>ติดต่อเรา
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h3><span class="counter" data-target="9" data-suffix="">0</span> จังหวัด</h3>
+                            <p>ในภาคเหนือ</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3><span class="counter" data-target="500" data-suffix="+">0</span></h3>
+                            <p>สถานที่ท่องเที่ยว</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3><span class="counter" data-target="100" data-suffix="+">0</span></h3>
+                            <p>วัดและโบราณสถาน</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-left">
+                    <div class="about-image-wrapper">
+                        <img src="images/chiang_mai.png"
+                            alt="วัดในภาคเหนือ">
+                        <div class="about-image-badge">
+                            <i class="bi bi-heart-fill"></i>
+                            มรดกทางวัฒนธรรม
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-right">
+                    <div class="section-subtitle text-uppercase fw-semibold" style="color: var(--accent); font-size: 0.9rem; letter-spacing: 2px;">
+                        เกี่ยวกับภาคเหนือ
+                    </div>
+                    <h2 class="section-title text-start">ดินแดนแห่งความงดงาม<br>ของล้านนา</h2>
+                    <div class="section-divider" style="margin-left: 0;"></div>
+                    <p>
+                        ภาคเหนือของประเทศไทยเป็นดินแดนที่เปี่ยมไปด้วยมนต์เสน่ห์ของธรรมชาติอัน
+                        งดงาม ขุนเขาสูงตระหง่าน ป่าไม้เขียวชอุ่ม น้ำตกที่สวยงาม
+                        ผสมผสานกับวัฒนธรรมล้านนาที่เก่าแก่กว่า 700 ปี
+                    </p>
+                    <p>
+                        ตั้งแต่วัดวาอารามอันวิจิตร อาหารพื้นเมืองรสชาติเป็นเอกลักษณ์
+                        ไปจนถึงวิถีชีวิตที่เรียบง่ายแต่อบอุ่น ภาคเหนือพร้อมต้อนรับ
+                        ทุกคนด้วยรอยยิ้มและอ้อมกอดของขุนเขา
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <div>
+                                <h6>ธรรมชาติ</h6>
+                                <p>อุทยานแห่งชาติกว่า 20 แห่ง</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <div>
+                                <h6>วัฒนธรรม</h6>
+                                <p>มรดกล้านนากว่า 700 ปี</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="bi bi-cup-hot"></i>
+                            </div>
+                            <div>
+                                <h6>อาหาร</h6>
+                                <p>อาหารเหนือรสเลิศมากมาย</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div>
+                                <h6>ชนเผ่า</h6>
+                                <p>ความหลากหลายทางชาติพันธุ์</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ATTRACTIONS SECTION ==================== -->
+    <section class="attractions-section section-padding" id="attractions">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <div class="section-subtitle text-uppercase fw-semibold"
+                    style="color: var(--accent); font-size: 0.9rem; letter-spacing: 2px;">
+                    จุดหมายปลายทาง
+                </div>
+                <h2 class="section-title">สถานที่ท่องเที่ยวแนะนำ</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">สถานที่ท่องเที่ยวยอดนิยมที่คุณไม่ควรพลาดเมื่อมาเยือนภาคเหนือ</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- เชียงใหม่ -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="attraction-card card">
+                        <div class="card-img-wrapper">
+                            <img src="images/chiang_mai.png"
+                                alt="เชียงใหม่">
+                            <span class="card-badge"><i class="bi bi-star-fill me-1"></i>ยอดนิยม</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">เชียงใหม่</h5>
+                            <p class="card-text">
+                                เมืองหลวงแห่งล้านนา ดอยสุเทพ เมืองเก่า ไนท์บาซาร์
+                                สัมผัสวิถีชีวิตสุดคลาสสิกของภาคเหนือ
+                            </p>
+                            <div class="card-meta">
+                                <span><i class="bi bi-geo-alt"></i>ดอยสุเทพ</span>
+                                <span><i class="bi bi-clock"></i>ตลอดปี</span>
+                            </div>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalChiangMai">
+                                อ่านเพิ่มเติม <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- เชียงราย -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="attraction-card card">
+                        <div class="card-img-wrapper">
+                            <img src="images/chiang_rai.png"
+                                alt="เชียงราย">
+                            <span class="card-badge"><i class="bi bi-gem me-1"></i>มหัศจรรย์</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">เชียงราย</h5>
+                            <p class="card-text">
+                                วัดร่องขุ่น (วัดขาว) บ้านดำ วัดร่องเสือเต้น
+                                ดอยตุง ไร่ชาสิงห์ปาร์ค ดินแดนสามเหลี่ยมทองคำ
+                            </p>
+                            <div class="card-meta">
+                                <span><i class="bi bi-geo-alt"></i>วัดร่องขุ่น</span>
+                                <span><i class="bi bi-clock"></i>ตลอดปี</span>
+                            </div>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalChiangRai">
+                                อ่านเพิ่มเติม <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ลำปาง -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="attraction-card card">
+                        <div class="card-img-wrapper">
+                            <img src="images/lampang.png"
+                                alt="ลำปาง">
+                            <span class="card-badge"><i class="bi bi-heart-fill me-1"></i>น่ารัก</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ลำปาง</h5>
+                            <p class="card-text">
+                                เมืองรถม้า วัดพระธาตุลำปางหลวง กาดกองต้า
+                                แหล่งเซรามิกชื่อดัง สุดคลาสสิกของดีเมืองเหนือ
+                            </p>
+                            <div class="card-meta">
+                                <span><i class="bi bi-geo-alt"></i>กาดกองต้า</span>
+                                <span><i class="bi bi-clock"></i>พ.ย. - ก.พ.</span>
+                            </div>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalLampang">
+                                อ่านเพิ่มเติม <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- น่าน -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="attraction-card card">
+                        <div class="card-img-wrapper">
+                            <img src="images/nan.png"
+                                alt="น่าน">
+                            <span class="card-badge"><i class="bi bi-palette-fill me-1"></i>ศิลปะ</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">น่าน</h5>
+                            <p class="card-text">
+                                วัดภูมินทร์กับจิตรกรรม "กระซิบรัก" ดอยเสมอดาว
+                                บ่อเกลือ เมืองเงียบสงบที่เต็มไปด้วยเสน่ห์
+                            </p>
+                            <div class="card-meta">
+                                <span><i class="bi bi-geo-alt"></i>วัดภูมินทร์</span>
+                                <span><i class="bi bi-clock"></i>พ.ย. - ม.ค.</span>
+                            </div>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalNan">
+                                อ่านเพิ่มเติม <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- แพร่ -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="attraction-card card">
+                        <div class="card-img-wrapper">
+                            <img src="images/phrae.png"
+                                alt="แพร่">
+                            <span class="card-badge"><i class="bi bi-house-heart-fill me-1"></i>บ้านไม้</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">แพร่</h5>
+                            <p class="card-text">
+                                บ้านวงศ์บุรี คุ้มเจ้าหลวง แพะเมืองผี
+                                เมืองแห่งบ้านไม้สักสุดงดงาม ผ้าหม้อห้อมอันลือชื่อ
+                            </p>
+                            <div class="card-meta">
+                                <span><i class="bi bi-geo-alt"></i>แพะเมืองผี</span>
+                                <span><i class="bi bi-clock"></i>ต.ค. - ก.พ.</span>
+                            </div>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalPhrae">
+                                อ่านเพิ่มเติม <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ลำพูน -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="attraction-card card">
+                        <div class="card-img-wrapper">
+                            <img src="images/lamphun.png"
+                                alt="ลำพูน">
+                            <span class="card-badge"><i class="bi bi-building me-1"></i>โบราณ</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ลำพูน</h5>
+                            <p class="card-text">
+                                วัดพระธาตุหริภุญชัย เมืองเก่าหริภุญไชย
+                                ต้นยางนาพันปี อุโมงค์ต้นยาง สวนลำไยอร่อยที่สุด
+                            </p>
+                            <div class="card-meta">
+                                <span><i class="bi bi-geo-alt"></i>วัดหริภุญชัย</span>
+                                <span><i class="bi bi-clock"></i>ตลอดปี</span>
+                            </div>
+                            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalLamphun">
+                                อ่านเพิ่มเติม <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CULTURE SECTION ==================== -->
+    <section class="culture-section section-padding" id="culture">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <div class="section-subtitle text-uppercase fw-semibold"
+                    style="color: var(--accent-light); font-size: 0.9rem; letter-spacing: 2px;">
+                    วัฒนธรรมล้านนา
+                </div>
+                <h2 class="section-title" style="color: var(--white);">สัมผัสวัฒนธรรมแห่งล้านนา</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.6);">
+                    วัฒนธรรมอันรุ่มรวยที่สืบทอดมายาวนานกว่า 700 ปี
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="culture-card">
+                        <div class="culture-icon">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </div>
+                        <h5>ดนตรีพื้นเมือง</h5>
+                        <p>ซึง สะล้อ ปี่ เครื่องดนตรีล้านนาที่มีเอกลักษณ์เฉพาะตัว สะท้อนวิถีชีวิตของชาวเหนือ</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="culture-card">
+                        <div class="culture-icon">
+                            <i class="bi bi-palette2"></i>
+                        </div>
+                        <h5>หัตถกรรม</h5>
+                        <p>ร่มบ่อสร้าง ผ้าทอมือ เครื่องเงิน เครื่องเขิน งานฝีมือสุดวิจิตรจากภูมิปัญญาชาวบ้าน</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="culture-card">
+                        <div class="culture-icon">
+                            <i class="bi bi-egg-fried"></i>
+                        </div>
+                        <h5>อาหารเหนือ</h5>
+                        <p>ข้าวซอย แกงฮังเล น้ำพริกอ่อง ไส้อั่ว ขนมจีนน้ำเงี้ยว อาหารที่ทำให้หลงรัก</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="culture-card">
+                        <div class="culture-icon">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <h5>เทศกาล</h5>
+                        <p>ยี่เป็ง ลอยกระทง สงกรานต์ล้านนา ปอยหลวง ประเพณีที่มีสีสันและความมีชีวิตชีวา</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY SECTION ==================== -->
+    <section class="gallery-section section-padding" id="gallery">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <div class="section-subtitle text-uppercase fw-semibold"
+                    style="color: var(--accent); font-size: 0.9rem; letter-spacing: 2px;">
+                    ภาพบรรยากาศ
+                </div>
+                <h2 class="section-title">แกลเลอรี่ภาคเหนือ</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">บันทึกความทรงจำจากดินแดนล้านนา</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="gallery-item">
+                        <img src="images/chiang_mai.png"
+                            alt="วัดในเชียงใหม่">
+                        <div class="gallery-overlay">
+                            <div>
+                                <h5>วัดเชียงใหม่</h5>
+                                <p>สถาปัตยกรรมล้านนาอันวิจิตร</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="gallery-item">
+                        <img src="images/gallery_mist.png"
+                            alt="ทะเลหมอก">
+                        <div class="gallery-overlay">
+                            <div>
+                                <h5>ทะเลหมอก</h5>
+                                <p>ยามเช้าบนดอยสูง</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="gallery-item">
+                        <img src="images/gallery_lantern.png"
+                            alt="โคมล้านนา">
+                        <div class="gallery-overlay">
+                            <div>
+                                <h5>โคมล้านนา</h5>
+                                <p>ประเพณียี่เป็งอันงดงาม</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 fade-up">
+                    <div class="gallery-item">
+                        <img src="images/gallery_rice.png"
+                            alt="นาขั้นบันได" style="height: 280px;">
+                        <div class="gallery-overlay">
+                            <div>
+                                <h5>ธรรมชาติภาคเหนือ</h5>
+                                <p>นาขั้นบันไดสุดอลังการ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 fade-up">
+                    <div class="gallery-item">
+                        <img src="images/gallery_tribe.png"
+                            alt="วิถีชีวิตชาวเหนือ" style="height: 280px;">
+                        <div class="gallery-overlay">
+                            <div>
+                                <h5>วิถีชีวิตชาวเหนือ</h5>
+                                <p>ความเรียบง่ายที่งดงาม</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <div class="section-subtitle text-uppercase fw-semibold"
+                    style="color: var(--accent); font-size: 0.9rem; letter-spacing: 2px;">
+                    ติดต่อสอบถาม
+                </div>
+                <h2 class="section-title">ติดต่อเรา</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">สนใจท่องเที่ยวภาคเหนือ? ติดต่อเราได้เลย</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-5 fade-left">
+                    <div class="contact-info-card">
+                        <h3>ข้อมูลติดต่อ</h3>
+                        <p>พร้อมให้บริการข้อมูลท่องเที่ยวภาคเหนือ</p>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h6>ที่อยู่</h6>
+                                <p>การท่องเที่ยวแห่งประเทศไทย<br>สำนักงานภาคเหนือ เชียงใหม่</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h6>โทรศัพท์</h6>
+                                <p>053-248-604</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div>
+                                <h6>อีเมล</h6>
+                                <p>info@northernthai-tourism.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div>
+                                <h6>เวลาทำการ</h6>
+                                <p>จันทร์ - ศุกร์: 08:30 - 16:30 น.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 fade-right">
+                    <div class="contact-form-wrapper">
+                        <h4 class="mb-4 fw-bold" style="color: var(--primary);">
+                            <i class="bi bi-chat-dots me-2"></i>ส่งข้อความถึงเรา
+                        </h4>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">ชื่อ-นามสกุล</label>
+                                    <input type="text" class="form-control" id="name"
+                                        placeholder="กรอกชื่อ-นามสกุลของคุณ">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">อีเมล</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="example@email.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+                                    <input type="tel" class="form-control" id="phone"
+                                        placeholder="0xx-xxx-xxxx">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">หัวข้อ</label>
+                                    <select class="form-select" id="subject">
+                                        <option selected disabled>เลือกหัวข้อ</option>
+                                        <option>สอบถามข้อมูลท่องเที่ยว</option>
+                                        <option>แนะนำสถานที่</option>
+                                        <option>จองทัวร์</option>
+                                        <option>อื่นๆ</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">ข้อความ</label>
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-submit">
+                                        <i class="bi bi-send me-2"></i>ส่งข้อความ
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== PROVINCE MODALS ==================== -->
+
+    <!-- Modal: เชียงใหม่ -->
+    <div class="modal fade" id="modalChiangMai" tabindex="-1" aria-labelledby="modalChiangMaiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="border: none; border-radius: 16px; overflow: hidden;">
+                <div class="modal-header border-0 p-0 position-relative">
+                    <img src="images/chiang_mai.png" alt="เชียงใหม่" style="width:100%; height:250px; object-fit:cover;">
+                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(26,71,49,0.8), transparent);"></div>
+                    <h3 class="modal-title position-absolute bottom-0 start-0 p-4 text-white fw-bold" id="modalChiangMaiLabel">
+                        <i class="bi bi-geo-alt-fill me-2" style="color:#dab04d;"></i>เชียงใหม่
+                    </h3>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="font-family:'Prompt',sans-serif;">
+                    <span class="badge rounded-pill mb-3" style="background:#1a4731;">เมืองหลวงแห่งล้านนา</span>
+                    <p>เชียงใหม่เป็นจังหวัดที่ใหญ่ที่สุดในภาคเหนือ ก่อตั้งโดยพ่อขุนมังรายมหาราชเมื่อปี พ.ศ. 1839 เป็นศูนย์กลางวัฒนธรรมล้านนาที่เก่าแก่กว่า 700 ปี เต็มไปด้วยวัดวาอารามงดงาม ธรรมชาติอันสมบูรณ์ และอาหารเหนือรสเลิศ</p>
+                    <h6 class="fw-bold mt-3" style="color:#1a4731;"><i class="bi bi-pin-map-fill me-2" style="color:#c4952a;"></i>สถานที่เด่น</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>วัดพระธาตุดอยสุเทพ — วัดคู่บ้านคู่เมืองเชียงใหม่</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>เมืองเก่าเชียงใหม่ — กำแพงเมืองโบราณ คูเมือง</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>อุทยานแห่งชาติดอยอินทนนท์ — จุดสูงสุดของประเทศไทย</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>ไนท์บาซาร์ — ตลาดกลางคืนชื่อดัง ของฝากมากมาย</li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6">
+                            <div class="p-3 rounded-3" style="background:#faf8f2;">
+                                <h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-calendar-heart me-2"></i>ช่วงเวลาที่ดีที่สุด</h6>
+                                <p class="mb-0 small text-muted">พฤศจิกายน - กุมภาพันธ์ อากาศเย็นสบาย</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 rounded-3" style="background:#faf8f2;">
+                                <h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-thermometer-half me-2"></i>อุณหภูมิ</h6>
+                                <p class="mb-0 small text-muted">15-30°C (ฤดูหนาว 8-20°C)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0">
+                    <button type="button" class="btn w-100" style="background:#1a4731; color:#fff; border-radius:50px; padding:0.7rem;" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: เชียงราย -->
+    <div class="modal fade" id="modalChiangRai" tabindex="-1" aria-labelledby="modalChiangRaiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="border: none; border-radius: 16px; overflow: hidden;">
+                <div class="modal-header border-0 p-0 position-relative">
+                    <img src="images/chiang_rai.png" alt="เชียงราย" style="width:100%; height:250px; object-fit:cover;">
+                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(26,71,49,0.8), transparent);"></div>
+                    <h3 class="modal-title position-absolute bottom-0 start-0 p-4 text-white fw-bold" id="modalChiangRaiLabel">
+                        <i class="bi bi-geo-alt-fill me-2" style="color:#dab04d;"></i>เชียงราย
+                    </h3>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="font-family:'Prompt',sans-serif;">
+                    <span class="badge rounded-pill mb-3" style="background:#1a4731;">ดินแดนศิลปะร่วมสมัย</span>
+                    <p>เชียงรายเป็นจังหวัดเหนือสุดของประเทศไทย เป็นที่ตั้งของสามเหลี่ยมทองคำ มีทั้งวัดที่สวยงามระดับโลกอย่างวัดร่องขุ่น ธรรมชาติอันงดงาม และชาวเขาหลากหลายชาติพันธุ์</p>
+                    <h6 class="fw-bold mt-3" style="color:#1a4731;"><i class="bi bi-pin-map-fill me-2" style="color:#c4952a;"></i>สถานที่เด่น</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>วัดร่องขุ่น — วัดขาวระดับโลกโดย อ.เฉลิมชัย</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>บ้านดำ — พิพิธภัณฑ์ศิลปะโดย อ.ถวัลย์ ดัชนี</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>ดอยตุง — สวนแม่ฟ้าหลวง วิวทิวทัศน์งดงาม</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>ภูชี้ฟ้า — จุดชมวิวทะเลหมอกชื่อดัง</li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-calendar-heart me-2"></i>ช่วงเวลาที่ดีที่สุด</h6><p class="mb-0 small text-muted">พฤศจิกายน - กุมภาพันธ์</p></div></div>
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-thermometer-half me-2"></i>อุณหภูมิ</h6><p class="mb-0 small text-muted">10-28°C (ฤดูหนาว 5-18°C)</p></div></div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0"><button type="button" class="btn w-100" style="background:#1a4731; color:#fff; border-radius:50px; padding:0.7rem;" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: ลำปาง -->
+    <div class="modal fade" id="modalLampang" tabindex="-1" aria-labelledby="modalLampangLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="border: none; border-radius: 16px; overflow: hidden;">
+                <div class="modal-header border-0 p-0 position-relative">
+                    <img src="images/lampang.png" alt="ลำปาง" style="width:100%; height:250px; object-fit:cover;">
+                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(26,71,49,0.8), transparent);"></div>
+                    <h3 class="modal-title position-absolute bottom-0 start-0 p-4 text-white fw-bold" id="modalLampangLabel"><i class="bi bi-geo-alt-fill me-2" style="color:#dab04d;"></i>ลำปาง</h3>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="font-family:'Prompt',sans-serif;">
+                    <span class="badge rounded-pill mb-3" style="background:#1a4731;">เมืองรถม้า</span>
+                    <p>ลำปางเป็นเมืองที่ยังคงอนุรักษ์วิถีชีวิตดั้งเดิม มีรถม้าเป็นสัญลักษณ์ของเมือง วัดพระธาตุลำปางหลวงเป็นวัดไม้ล้านนาที่สมบูรณ์ที่สุด รวมถึงกาดกองต้าตลาดเก่าที่มีเสน่ห์</p>
+                    <h6 class="fw-bold mt-3" style="color:#1a4731;"><i class="bi bi-pin-map-fill me-2" style="color:#c4952a;"></i>สถานที่เด่น</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>วัดพระธาตุลำปางหลวง — วัดไม้ล้านนาที่สมบูรณ์ที่สุด</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>กาดกองต้า — ถนนคนเดินย่านเก่า บรรยากาศดี</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>ศูนย์อนุรักษ์ช้างไทย — ชมการแสดงช้าง</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>เซรามิกลำปาง — แหล่งผลิตเซรามิกชื่อดัง</li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-calendar-heart me-2"></i>ช่วงเวลาที่ดีที่สุด</h6><p class="mb-0 small text-muted">พฤศจิกายน - กุมภาพันธ์</p></div></div>
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-thermometer-half me-2"></i>อุณหภูมิ</h6><p class="mb-0 small text-muted">18-32°C (ฤดูหนาว 12-25°C)</p></div></div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0"><button type="button" class="btn w-100" style="background:#1a4731; color:#fff; border-radius:50px; padding:0.7rem;" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: น่าน -->
+    <div class="modal fade" id="modalNan" tabindex="-1" aria-labelledby="modalNanLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="border: none; border-radius: 16px; overflow: hidden;">
+                <div class="modal-header border-0 p-0 position-relative">
+                    <img src="images/nan.png" alt="น่าน" style="width:100%; height:250px; object-fit:cover;">
+                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(26,71,49,0.8), transparent);"></div>
+                    <h3 class="modal-title position-absolute bottom-0 start-0 p-4 text-white fw-bold" id="modalNanLabel"><i class="bi bi-geo-alt-fill me-2" style="color:#dab04d;"></i>น่าน</h3>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="font-family:'Prompt',sans-serif;">
+                    <span class="badge rounded-pill mb-3" style="background:#1a4731;">เมืองเงียบสงบ</span>
+                    <p>น่านเป็นจังหวัดที่เต็มไปด้วยเสน่ห์ของความเงียบสงบ มีวัดภูมินทร์ที่มีจิตรกรรมฝาผนัง "กระซิบรัก" อันโด่งดัง ดอยเสมอดาวกับทะเลหมอก และบ่อเกลือโบราณที่หาชมได้ยาก</p>
+                    <h6 class="fw-bold mt-3" style="color:#1a4731;"><i class="bi bi-pin-map-fill me-2" style="color:#c4952a;"></i>สถานที่เด่น</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>วัดภูมินทร์ — จิตรกรรม "กระซิบรัก" อันโด่งดัง</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>ดอยเสมอดาว — ทะเลหมอกสุดอลังการ</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>บ่อเกลือ — แหล่งผลิตเกลือสินเธาว์โบราณ</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>ถนนคนเดินน่าน — ของฝากและอาหารพื้นเมือง</li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-calendar-heart me-2"></i>ช่วงเวลาที่ดีที่สุด</h6><p class="mb-0 small text-muted">พฤศจิกายน - มกราคม</p></div></div>
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-thermometer-half me-2"></i>อุณหภูมิ</h6><p class="mb-0 small text-muted">12-28°C (ฤดูหนาว 5-15°C)</p></div></div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0"><button type="button" class="btn w-100" style="background:#1a4731; color:#fff; border-radius:50px; padding:0.7rem;" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: แพร่ -->
+    <div class="modal fade" id="modalPhrae" tabindex="-1" aria-labelledby="modalPhraeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="border: none; border-radius: 16px; overflow: hidden;">
+                <div class="modal-header border-0 p-0 position-relative">
+                    <img src="images/phrae.png" alt="แพร่" style="width:100%; height:250px; object-fit:cover;">
+                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(26,71,49,0.8), transparent);"></div>
+                    <h3 class="modal-title position-absolute bottom-0 start-0 p-4 text-white fw-bold" id="modalPhraeLabel"><i class="bi bi-geo-alt-fill me-2" style="color:#dab04d;"></i>แพร่</h3>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="font-family:'Prompt',sans-serif;">
+                    <span class="badge rounded-pill mb-3" style="background:#1a4731;">เมืองแห่งบ้านไม้สัก</span>
+                    <p>แพร่เป็นเมืองเงียบสงบที่เต็มไปด้วยบ้านไม้สักเก่าแก่สุดงดงาม มีแพะเมืองผีที่เป็นปรากฏการณ์ทางธรรมชาติที่น่าทึ่ง และผ้าหม้อห้อมที่เป็นเอกลักษณ์ของจังหวัด</p>
+                    <h6 class="fw-bold mt-3" style="color:#1a4731;"><i class="bi bi-pin-map-fill me-2" style="color:#c4952a;"></i>สถานที่เด่น</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>บ้านวงศ์บุรี — บ้านไม้สักทองสุดอลังการ</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>แพะเมืองผี — เสาดินรูปร่างแปลกตา</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>คุ้มเจ้าหลวง — พิพิธภัณฑ์บ้านเจ้าเมือง</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>หมู่บ้านทุ่งโฮ้ง — แหล่งผ้าหม้อห้อมชื่อดัง</li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-calendar-heart me-2"></i>ช่วงเวลาที่ดีที่สุด</h6><p class="mb-0 small text-muted">ตุลาคม - กุมภาพันธ์</p></div></div>
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-thermometer-half me-2"></i>อุณหภูมิ</h6><p class="mb-0 small text-muted">15-30°C (ฤดูหนาว 10-22°C)</p></div></div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0"><button type="button" class="btn w-100" style="background:#1a4731; color:#fff; border-radius:50px; padding:0.7rem;" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: ลำพูน -->
+    <div class="modal fade" id="modalLamphun" tabindex="-1" aria-labelledby="modalLamphunLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="border: none; border-radius: 16px; overflow: hidden;">
+                <div class="modal-header border-0 p-0 position-relative">
+                    <img src="images/lamphun.png" alt="ลำพูน" style="width:100%; height:250px; object-fit:cover;">
+                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(26,71,49,0.8), transparent);"></div>
+                    <h3 class="modal-title position-absolute bottom-0 start-0 p-4 text-white fw-bold" id="modalLamphunLabel"><i class="bi bi-geo-alt-fill me-2" style="color:#dab04d;"></i>ลำพูน</h3>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="font-family:'Prompt',sans-serif;">
+                    <span class="badge rounded-pill mb-3" style="background:#1a4731;">เมืองหริภุญไชย</span>
+                    <p>ลำพูนเป็นเมืองเก่าแก่ที่สุดในภาคเหนือ มีประวัติศาสตร์ยาวนานกว่า 1,300 ปี เป็นที่ตั้งของวัดพระธาตุหริภุญชัยอันศักดิ์สิทธิ์ และเป็นแหล่งปลูกลำไยที่ดีที่สุดในประเทศ</p>
+                    <h6 class="fw-bold mt-3" style="color:#1a4731;"><i class="bi bi-pin-map-fill me-2" style="color:#c4952a;"></i>สถานที่เด่น</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>วัดพระธาตุหริภุญชัย — วัดคู่เมืองลำพูน</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>อุโมงค์ต้นยาง — ถนนร่มรื่นที่สวยงาม</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>วัดจามเทวี — สถาปัตยกรรมทวารวดี</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color:#c4952a;"></i>สวนลำไย — ลำไยพันธุ์ดีอร่อยที่สุด</li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-calendar-heart me-2"></i>ช่วงเวลาที่ดีที่สุด</h6><p class="mb-0 small text-muted">ตลอดปี (ลำไย: ก.ค.-ส.ค.)</p></div></div>
+                        <div class="col-6"><div class="p-3 rounded-3" style="background:#faf8f2;"><h6 class="fw-bold mb-1" style="color:#1a4731;"><i class="bi bi-thermometer-half me-2"></i>อุณหภูมิ</h6><p class="mb-0 small text-muted">18-33°C (ฤดูหนาว 15-28°C)</p></div></div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0"><button type="button" class="btn w-100" style="background:#1a4731; color:#fff; border-radius:50px; padding:0.7rem;" data-bs-dismiss="modal">ปิด</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        เหนือสุดแดนสยาม
+                    </div>
+                    <p class="footer-desc">
+                        เว็บไซต์แนะนำสถานที่ท่องเที่ยวภาคเหนือของประเทศไทย
+                        รวบรวมข้อมูลสถานที่ท่องเที่ยว วัฒนธรรม อาหาร
+                        และกิจกรรมที่น่าสนใจในภาคเหนือ
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6>ลิงก์ด่วน</h6>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="bi bi-chevron-right"></i>หน้าแรก</a></li>
+                        <li><a href="#about"><i class="bi bi-chevron-right"></i>เกี่ยวกับ</a></li>
+                        <li><a href="#attractions"><i class="bi bi-chevron-right"></i>สถานที่ท่องเที่ยว</a></li>
+                        <li><a href="#gallery"><i class="bi bi-chevron-right"></i>แกลเลอรี่</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6>จังหวัดภาคเหนือ</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-chevron-right"></i>เชียงใหม่</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i>เชียงราย</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i>ลำปาง</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i>น่าน</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i>แพร่</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right"></i>ลำพูน</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6>ติดต่อเรา</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="bi bi-telephone me-2"></i>053-248-604</a></li>
+                        <li><a href="#"><i class="bi bi-envelope me-2"></i>info@northernthai.com</a></li>
+                        <li><a href="#"><i class="bi bi-geo-alt me-2"></i>เชียงใหม่, ประเทศไทย</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 เหนือสุดแดนสยาม - Northern Thailand Tourism. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmpOS — Portfolio Desktop</title>
+    <meta name="description" content="ผลงาน Assignment Web Development — กรวิชญ์ พุทธบารมี (661283)">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- DESKTOP ICONS -->
+<div class="desktop" id="desktop">
+    <div class="icon" ondblclick="openWin('w2')"><div class="icon-img">📁</div><div class="icon-label">Week 2</div></div>
+    <div class="icon" ondblclick="openWin('w34')"><div class="icon-img">📁</div><div class="icon-label">Week 3-4</div></div>
+    <div class="icon" ondblclick="openWin('w5')"><div class="icon-img">📁</div><div class="icon-label">Week 5</div></div>
+    <div class="icon" ondblclick="openWin('w7')"><div class="icon-img">📁</div><div class="icon-label">Week 7</div></div>
+    <div class="icon" ondblclick="openWin('w89')"><div class="icon-img">📁</div><div class="icon-label">Week 8-9</div></div>
+    <div class="icon" ondblclick="openWin('w10')"><div class="icon-img">📁</div><div class="icon-label">Week 10</div></div>
+    <div class="icon" ondblclick="openWin('w1112')"><div class="icon-img">📁</div><div class="icon-label">Week 11-12</div></div>
+    <div class="icon" ondblclick="openWin('about')" style="margin-top:16px;"><div class="icon-img">👤</div><div class="icon-label">About Me</div></div>
+</div>
+
+<!-- ===== WINDOWS ===== -->
+
+<!-- WEEK 2 -->
+<div class="window" id="w2" style="top:60px;left:120px;">
+    <div class="win-title" onmousedown="startDrag(event,'w2')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('w2')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">📁 Week 2 — HTML Basics</span>
+    </div>
+    <div class="win-body">
+        <div class="win-cards">
+            <a href="../Assignment-Week2-1/resource/661283.html" target="_blank" class="card">
+                <span class="card-emoji">🌐</span>
+                <span class="card-num">Assignment 01</span>
+                <h4>HTML พื้นฐาน</h4>
+                <p class="card-desc">Heading, Image, Marquee, Inline Style</p>
+                <div class="card-tags"><span class="ct html">HTML</span><span class="ct css">CSS</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week2-Loey/index.html" target="_blank" class="card featured">
+                <span class="card-emoji">🏔️</span>
+                <span class="card-num">Assignment 02</span>
+                <h4>เว็บไซต์จังหวัดเลย</h4>
+                <p class="card-desc">3 หน้า — ข้อมูล สถานที่ ของดี + Navigation</p>
+                <div class="card-tags"><span class="ct html">HTML</span><span class="ct css">CSS</span><span class="ct gen">3 Pages</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- WEEK 3-4 -->
+<div class="window" id="w34" style="top:80px;left:200px;">
+    <div class="win-title" onmousedown="startDrag(event,'w34')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('w34')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">📁 Week 3-4 — CSS & Bootstrap</span>
+    </div>
+    <div class="win-body">
+        <div class="win-cards">
+            <a href="../Assignment-Week3-1/661283/study.html" target="_blank" class="card">
+                <span class="card-emoji">🎨</span>
+                <span class="card-num">Assignment 03</span>
+                <h4>CSS 3 แบบ</h4>
+                <p class="card-desc">Inline, Internal, External Stylesheet</p>
+                <div class="card-tags"><span class="ct html">HTML</span><span class="ct css">CSS</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week4-1/661283/ 661283layout.html" target="_blank" class="card">
+                <span class="card-emoji">✏️</span>
+                <span class="card-num">Assignment 04</span>
+                <h4>Internal/External CSS</h4>
+                <p class="card-desc">Font, Color, Background Styling</p>
+                <div class="card-tags"><span class="ct html">HTML</span><span class="ct css">CSS</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week4-2/index.html" target="_blank" class="card">
+                <span class="card-emoji">🅱️</span>
+                <span class="card-num">Assignment 05</span>
+                <h4>Bootstrap Utilities</h4>
+                <p class="card-desc">Colors, Borders, Fonts, Tables — 11 ไฟล์</p>
+                <div class="card-tags"><span class="ct bs">Bootstrap</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- WEEK 5 -->
+<div class="window" id="w5" style="top:100px;left:280px;">
+    <div class="win-title" onmousedown="startDrag(event,'w5')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('w5')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">📁 Week 5 — Components & Tourism</span>
+    </div>
+    <div class="win-body">
+        <div class="win-cards">
+            <a href="../Assignment-Week5-1/index.html" target="_blank" class="card">
+                <span class="card-emoji">🧩</span>
+                <span class="card-num">Assignment 06</span>
+                <h4>Bootstrap Components</h4>
+                <p class="card-desc">Button, Alert, Card, Modal, Navbar — 33 ไฟล์</p>
+                <div class="card-tags"><span class="ct bs">Bootstrap</span><span class="ct gen">33 Files</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week5-Tourism/index.html" target="_blank" class="card featured">
+                <span class="card-emoji">🌄</span>
+                <span class="card-num">Assignment 07</span>
+                <h4>⭐ เว็บท่องเที่ยวภาคเหนือ</h4>
+                <p class="card-desc">Full Project — Hero, Gallery, Modal, Contact Form</p>
+                <div class="card-tags"><span class="ct html">HTML</span><span class="ct css">CSS</span><span class="ct bs">BS5</span><span class="ct js">JS</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- WEEK 7 -->
+<div class="window" id="w7" style="top:70px;left:350px;">
+    <div class="win-title" onmousedown="startDrag(event,'w7')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('w7')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">📁 Week 7 — Forms</span>
+    </div>
+    <div class="win-body">
+        <div class="win-cards">
+            <a href="../Assignment-Week7-1/index.html" target="_blank" class="card">
+                <span class="card-emoji">📋</span>
+                <span class="card-num">Assignment 08</span>
+                <h4>Form Controls</h4>
+                <p class="card-desc">Input, Select, Checkbox, Switch, Range — 16 ไฟล์</p>
+                <div class="card-tags"><span class="ct bs">Bootstrap</span><span class="ct gen">Forms</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week7-2/one.html" target="_blank" class="card">
+                <span class="card-emoji">📝</span>
+                <span class="card-num">Assignment 09</span>
+                <h4>แบบฟอร์มสมบูรณ์</h4>
+                <p class="card-desc">Custom Theme, Fieldset, Toggle Password</p>
+                <div class="card-tags"><span class="ct html">HTML</span><span class="ct css">CSS</span><span class="ct bs">BS5</span><span class="ct js">JS</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- WEEK 8-9 -->
+<div class="window" id="w89" style="top:90px;left:180px;">
+    <div class="win-title" onmousedown="startDrag(event,'w89')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('w89')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">📁 Week 8-9 — Layout & Grid</span>
+    </div>
+    <div class="win-body">
+        <div class="win-cards">
+            <a href="../Assignment-Week8-1/660673Assignment 6 - BS5-4/index.html" target="_blank" class="card">
+                <span class="card-emoji">📐</span>
+                <span class="card-num">Assignment 10</span>
+                <h4>Flexbox Layout</h4>
+                <p class="card-desc">d-flex, direction, wrap, justify, align — 13 ไฟล์</p>
+                <div class="card-tags"><span class="ct bs">Bootstrap</span><span class="ct gen">Flex</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week9-1/index.html" target="_blank" class="card">
+                <span class="card-emoji">🧱</span>
+                <span class="card-num">Assignment 11</span>
+                <h4>Grid & Responsive</h4>
+                <p class="card-desc">Grid, Breakpoints, Gutter, Responsive — 19 ไฟล์</p>
+                <div class="card-tags"><span class="ct bs">Bootstrap</span><span class="ct gen">Grid</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week9-2/one.html" target="_blank" class="card">
+                <span class="card-emoji">📱</span>
+                <span class="card-num">Assignment 12</span>
+                <h4>Responsive Form</h4>
+                <p class="card-desc">ฟอร์ม Responsive ด้วย Grid col-lg</p>
+                <div class="card-tags"><span class="ct bs">Bootstrap</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- WEEK 10 -->
+<div class="window" id="w10" style="top:110px;left:250px;">
+    <div class="win-title" onmousedown="startDrag(event,'w10')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('w10')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">📁 Week 10 — JavaScript</span>
+    </div>
+    <div class="win-body">
+        <div class="win-cards">
+            <a href="../Assignment-Week10-1/index.html" target="_blank" class="card">
+                <span class="card-emoji">⚡</span>
+                <span class="card-num">Assignment 13</span>
+                <h4>JavaScript พื้นฐาน</h4>
+                <p class="card-desc">getElementById, innerHTML, onclick — 10 ไฟล์</p>
+                <div class="card-tags"><span class="ct js">JS</span><span class="ct html">HTML</span><span class="ct gen">DOM</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week10-2/index.html" target="_blank" class="card">
+                <span class="card-emoji">🛒</span>
+                <span class="card-num">Assignment 14</span>
+                <h4>ระบบสั่งซื้อ</h4>
+                <p class="card-desc">Array, Object, Function สรุปการสั่งซื้อ</p>
+                <div class="card-tags"><span class="ct js">JS</span><span class="ct gen">Array</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- WEEK 11-12 -->
+<div class="window" id="w1112" style="top:50px;left:300px;">
+    <div class="win-title" onmousedown="startDrag(event,'w1112')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('w1112')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">📁 Week 11-12 — Advanced JS</span>
+    </div>
+    <div class="win-body">
+        <div class="win-cards">
+            <a href="../Assignment-Week11-1/index.html" target="_blank" class="card">
+                <span class="card-emoji">🔍</span>
+                <span class="card-num">Assignment 15</span>
+                <h4>Filter, Map & OOP</h4>
+                <p class="card-desc">Array, Filter/Map, Splice, Class Student</p>
+                <div class="card-tags"><span class="ct js">JS</span><span class="ct gen">OOP</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week11-2/index.html" target="_blank" class="card">
+                <span class="card-emoji">🧪</span>
+                <span class="card-num">Assignment 16</span>
+                <h4>Array & Object (Advanced)</h4>
+                <p class="card-desc">5 ข้อ: Array, Filter, Splice, Loop, OOP</p>
+                <div class="card-tags"><span class="ct js">JS</span><span class="ct gen">Array</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+            <a href="../Assignment-Week12-Javascript/index.html" target="_blank" class="card featured">
+                <span class="card-emoji">☕</span>
+                <span class="card-num">Assignment 17</span>
+                <h4>⭐ JS Exercises (Final)</h4>
+                <p class="card-desc">7 ข้อ: Grade, Stock, ค่าปรับ, ภาษี, กาแฟ</p>
+                <div class="card-tags"><span class="ct js">JS</span><span class="ct gen">Logic</span><span class="ct gen">DOM</span></div>
+                <div class="card-btn">View →</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="window" id="about" style="top:100px;left:200px;">
+    <div class="win-title" onmousedown="startDrag(event,'about')">
+        <div class="win-dots"><span class="win-dot red" onclick="closeWin('about')"></span><span class="win-dot yellow"></span><span class="win-dot green"></span></div>
+        <span class="win-title-text">👤 About Me</span>
+    </div>
+    <div class="win-body">
+        <div class="about-content">
+            <div class="about-avatar">👨‍💻</div>
+            <div class="about-name">กรวิชญ์ พุทธบารมี</div>
+            <div class="about-id">661283 — Web Development 2026</div>
+            <div class="about-stats">
+                <div class="ab-stat"><div class="ab-stat-num">17</div><div class="ab-stat-label">Projects</div></div>
+                <div class="ab-stat"><div class="ab-stat-num">10</div><div class="ab-stat-label">Weeks</div></div>
+                <div class="ab-stat"><div class="ab-stat-num">4</div><div class="ab-stat-label">Skills</div></div>
+            </div>
+            <div class="about-pills">
+                <span class="ab-pill html">HTML</span>
+                <span class="ab-pill css">CSS</span>
+                <span class="ab-pill bs">Bootstrap</span>
+                <span class="ab-pill js">JavaScript</span>
+            </div>
+            
+            <div class="about-edu">
+                <h4>🎓 ประวัติการศึกษา</h4>
+                <div class="edu-list">
+                    <div class="edu-item">
+                        <img src="../Assignment-Week4-1/661283/school.png" alt="มาเรียลัย" class="edu-logo" onerror="this.src='https://via.placeholder.com/40'">
+                        <div class="edu-info">
+                            <div class="edu-level">มัธยมต้น - มัธยมปลาย</div>
+                            <div class="edu-school">โรงเรียนมาเรียลัย</div>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <img src="../Assignment-Week4-1/661283/uni.png" alt="HCU" class="edu-logo" onerror="this.src='https://via.placeholder.com/40'">
+                        <div class="edu-info">
+                            <div class="edu-level">อุดมศึกษา</div>
+                            <div class="edu-school">มหาวิทยาลัยหัวเฉียวเฉลิมพระเกียรติ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- START MENU -->
+<div class="start-menu" id="startMenu">
+    <div class="start-header">
+        <div class="name">👨‍💻 Amp Portfolio OS</div>
+        <div class="sub">กรวิชญ์ พุทธบารมี (661283)</div>
+    </div>
+    <div class="start-items">
+        <div class="start-item" onclick="openWin('about');toggleStart()"><span class="si-icon">👤</span> About Me</div>
+        <div class="start-item" onclick="openAll();toggleStart()"><span class="si-icon">📂</span> Open All Folders</div>
+        <div class="start-item" onclick="closeAll();toggleStart()"><span class="si-icon">🧹</span> Close All Windows</div>
+    </div>
+</div>
+
+<!-- TASKBAR -->
+<div class="taskbar">
+    <button class="start-btn" onclick="toggleStart()">✦ Start</button>
+    <div class="taskbar-divider"></div>
+    <div class="task-items" id="taskItems"></div>
+    <div class="clock" id="clock">00:00</div>
+</div>
+
+<script>
+const wins = {};
+document.querySelectorAll('.window').forEach(w => { wins[w.id] = w; });
+let topZ = 100;
+
+function openWin(id) {
+    const w = wins[id];
+    w.classList.add('open');
+    w.style.zIndex = ++topZ;
+    updateTaskbar();
+    document.getElementById('startMenu').classList.remove('open');
+}
+function closeWin(id) {
+    wins[id].classList.remove('open');
+    updateTaskbar();
+}
+function focusWin(id) {
+    wins[id].style.zIndex = ++topZ;
+    updateTaskbar();
+}
+function openAll() { Object.keys(wins).forEach((id,i) => setTimeout(() => openWin(id), i*100)); }
+function closeAll() { Object.keys(wins).forEach(id => closeWin(id)); }
+function toggleStart() { document.getElementById('startMenu').classList.toggle('open'); }
+
+// Taskbar items
+function updateTaskbar() {
+    const tb = document.getElementById('taskItems');
+    tb.innerHTML = '';
+    Object.entries(wins).forEach(([id, w]) => {
+        if (w.classList.contains('open')) {
+            const t = document.createElement('div');
+            t.className = 'task-item';
+            t.textContent = w.querySelector('.win-title-text').textContent;
+            t.onclick = () => focusWin(id);
+            tb.appendChild(t);
+        }
+    });
+}
+
+// Drag windows
+let dragEl = null, dragOff = {x:0,y:0};
+function startDrag(e, id) {
+    dragEl = wins[id];
+    focusWin(id);
+    const r = dragEl.getBoundingClientRect();
+    dragOff = { x: e.clientX - r.left, y: e.clientY - r.top };
+    e.preventDefault();
+}
+document.addEventListener('mousemove', e => {
+    if (!dragEl) return;
+    dragEl.style.left = (e.clientX - dragOff.x) + 'px';
+    dragEl.style.top = (e.clientY - dragOff.y) + 'px';
+});
+document.addEventListener('mouseup', () => { dragEl = null; });
+
+// Touch drag
+document.addEventListener('touchmove', e => {
+    if (!dragEl) return;
+    const t = e.touches[0];
+    dragEl.style.left = (t.clientX - dragOff.x) + 'px';
+    dragEl.style.top = (t.clientY - dragOff.y) + 'px';
+}, { passive: false });
+document.addEventListener('touchend', () => { dragEl = null; });
+document.querySelectorAll('.win-title').forEach(t => {
+    t.addEventListener('touchstart', e => {
+        const id = t.parentElement.id;
+        const touch = e.touches[0];
+        startDrag({ clientX: touch.clientX, clientY: touch.clientY, preventDefault(){} }, id);
+    });
+});
+
+// Clock
+function updateClock() {
+    const d = new Date();
+    document.getElementById('clock').textContent =
+        d.getHours().toString().padStart(2,'0') + ':' + d.getMinutes().toString().padStart(2,'0');
+}
+updateClock(); setInterval(updateClock, 10000);
+
+// Close start menu on outside click
+document.addEventListener('click', e => {
+    if (!e.target.closest('.start-menu') && !e.target.closest('.start-btn')) {
+        document.getElementById('startMenu').classList.remove('open');
+    }
+});
+
+// Desktop icon click
+document.querySelectorAll('.icon').forEach(ic => {
+    ic.addEventListener('click', () => {
+        document.querySelectorAll('.icon').forEach(i => i.classList.remove('selected'));
+        ic.classList.add('selected');
+    });
+});
+document.getElementById('desktop').addEventListener('click', e => {
+    if (e.target === e.currentTarget) document.querySelectorAll('.icon').forEach(i => i.classList.remove('selected'));
+});
+</script>
+
+</body>
+</html>

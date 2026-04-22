@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ของดีเมืองเลย - จังหวัดเลย</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+        body { font-family: 'Sarabun', sans-serif; margin: 0; padding: 0; background-color: #fff3e0; }
+        header { background-color: #e65100; color: white; padding: 25px; text-align: center; }
+        nav { background-color: #ef6c00; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { color: #ffe0b2; }
+        .container { width: 80%; margin: 30px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .product-container { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+        .product-card { background: #fff; border: 1px solid #ffe0b2; border-radius: 8px; width: 45%; text-align: center; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .product-card img { width: 100%; height: 250px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+        h2 { color: #d84315; border-bottom: 2px solid #ef6c00; padding-bottom: 10px; }
+        h3 { color: #bf360c; }
+        footer { background-color: #e65100; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+        
+        @media (max-width: 600px) {
+            .product-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ของดี ของฝาก เมืองเลย</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าแรก (ข้อมูลจังหวัด)</a>
+        <a href="one.html">สถานที่ท่องเที่ยว</a>
+        <a href="two.html">ของดีประจำจังหวัด</a>
+    </nav>
+
+    <div class="container">
+        <h2>ผลิตภัณฑ์และอาหารแนะนำ</h2>
+        
+        <div class="product-container">
+            <div class="product-card">
+                <img src="food1.jpg" alt="มะพร้าวแก้ว">
+                <h3>มะพร้าวแก้ว</h3>
+                <p>ของฝากขึ้นชื่อจากเชียงคาน ทำจากเนื้อมะพร้าวเกรดดี นำมาเคี่ยวน้ำตาล มีทั้งแบบแผ่นนิ่มและแผ่นกรอบ รสชาติหวานมัน หอมอร่อย</p>
+            </div>
+
+            <div class="product-card">
+                <img src="food2.jpg" alt="หน้ากากผีตาโขน">
+                <h3>ของที่ระลึกผีตาโขน</h3>
+                <p>สัญลักษณ์ทางวัฒนธรรมของอำเภอด่านซ้าย มีทั้งหน้ากากขนาดจริงสำหรับสวมใส่ และของที่ระลึกขนาดเล็ก เช่น พวงกุญแจ หรือแม่เหล็กติดตู้เย็น</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>จัดทำโดย 661283 กรวิชญ์ พุทธบารมี</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มของฉัน</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --bs-primary: #6366f1;
+            --bs-primary-rgb: 99, 102, 241;
+            --accent: #818cf8;
+            --accent-dark: #4f46e5;
+        }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #f5f3ff 100%);
+            min-height: 100vh;
+        }
+
+        .card-form {
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(99, 102, 241, 0.12);
+        }
+
+        h2.text-primary,
+        .text-primary {
+            color: #6366f1 !important;
+        }
+
+        legend.text-primary {
+            color: #4f46e5 !important;
+            border-bottom-color: #c7d2fe !important;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #6366f1, #818cf8);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+        }
+
+        .btn-outline-primary {
+            color: #6366f1;
+            border-color: #6366f1;
+        }
+
+        .btn-outline-primary:hover,
+        .btn-check:checked+.btn-outline-primary {
+            background-color: #6366f1;
+            border-color: #6366f1;
+            color: #fff;
+        }
+
+        .btn-outline-info {
+            color: #06b6d4;
+            border-color: #06b6d4;
+        }
+
+        .btn-outline-info:hover,
+        .btn-check:checked+.btn-outline-info {
+            background-color: #06b6d4;
+            border-color: #06b6d4;
+            color: #fff;
+        }
+
+        .btn-outline-dark {
+            color: #334155;
+            border-color: #334155;
+        }
+
+        .btn-outline-dark:hover,
+        .btn-check:checked+.btn-outline-dark {
+            background-color: #334155;
+            border-color: #334155;
+        }
+
+        .btn-success {
+            background-color: #10b981;
+            border-color: #10b981;
+        }
+
+        .btn-success:hover {
+            background-color: #059669;
+            border-color: #059669;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #a5b4fc;
+            box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.2);
+        }
+
+        .form-check-input:checked {
+            background-color: #6366f1;
+            border-color: #6366f1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 p-4 bg-white card-form">
+                <h2 class="mb-4 text-center text-primary">แบบฟอร์มของฉัน</h2>
+
+                <form>
+                    <fieldset class="mb-4">
+                        <legend class="h5 text-primary border-bottom pb-2">ข้อมูลส่วนตัว</legend>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">ชื่อ</label>
+                            <input type="text" class="form-control" id="name" placeholder="กรุณากรอกชื่อของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="surname" class="form-label">นามสกุล</label>
+                            <input type="text" class="form-control" id="surname" placeholder="กรุณากรอกนามสกุลของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthday" class="form-label">วันเกิด</label>
+                            <input type="date" class="form-control" id="birthday">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label d-block">เพศ</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="rd_male" name="gender" value="male">
+                                <label for="rd_male" class="form-check-label">ชาย</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="rd_female" name="gender"
+                                    value="female">
+                                <label for="rd_female" class="form-check-label">หญิง</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="rd_other" name="gender" value="other">
+                                <label for="rd_other" class="form-check-label">อื่นๆ</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset class="mb-4">
+                        <legend class="h5 text-primary border-bottom pb-2">ข้อมูลการติดต่อและงาน</legend>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">อีเมล</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">รหัสผ่าน</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                    <i class="bi bi-eye" id="eyeIcon"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+                            <input type="NUMBER" class="form-control" id="phone" placeholder="08x-xxx-xxxx"
+                                inputmode="numeric" pattern="[0-9]*"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">ที่อยู่</label>
+                            <textarea class="form-control" id="address" rows="3"
+                                placeholder="บ้านเลขที่, ถนน, แขวง..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="website" class="form-label">เว็บไซต์ส่วนตัว</label>
+                            <div class="input-group">
+                                <span class="input-group-text">https://</span>
+                                <input type="url" class="form-control" id="website" placeholder="www.yourlink.com">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="salary" class="form-label">เงินเดือนที่อยากได้</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="salary" name="salary"
+                                    placeholder="ระบุจำนวนเงิน" inputmode="numeric" pattern="[0-9]*"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                <span class="input-group-text">บาท</span>
+                            </div>
+                            <div class="form-text text-muted">ระบุเฉพาะตัวเลขเท่านั้น</div>
+                        </div>
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset class="mb-4">
+                        <legend class="h5 text-primary border-bottom pb-2">ความสนใจและไลฟ์สไตล์</legend>
+                        <div class="mb-3">
+                            <label for="s1" class="form-label">ประเภทอาหารที่ชอบ</label>
+                            <select class="form-select" id="s1">
+                                <option value="" selected disabled>-- กรุณาเลือกประเภทอาหาร --</option>
+                                <option value="1">อาหารไทย</option>
+                                <option value="2">อาหารญี่ปุ่น</option>
+                                <option value="3">อาหารอิตาเลียน</option>
+                            </select>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6 border-end">
+                                <h6 class="fw-bold small text-muted">เครื่องดื่มที่ชอบ</h6>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="cb1">
+                                    <label for="cb1" class="form-check-label">กาแฟ</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="cb2">
+                                    <label for="cb2" class="form-check-label">ชา</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="fw-bold small text-muted">บริการสตรีมมิ่งที่ใช้</h6>
+                                <div class="form-check form-switch">
+                                    <input type="checkbox" class="form-check-input" id="sw1">
+                                    <label for="sw1" class="form-check-label">Netflix</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input type="checkbox" class="form-check-input" id="sw2">
+                                    <label for="sw2" class="form-check-label">YouTube</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="hairColor" class="form-label fw-bold small text-muted">สีที่ชอบ</label>
+                            <input type="color" class="form-control form-control-color w-100" id="hairColor"
+                                value="#000000">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small text-muted">ประเภทหนังที่ชอบดู:</label>
+                            <div class="btn-group w-100" role="group">
+                                <input type="radio" id="p1" class="btn-check" name="movie" value="action">
+                                <label for="p1" class="btn btn-outline-primary">แอ็คชั่น</label>
+                                <input type="radio" id="p2" class="btn-check" name="movie" value="romantic">
+                                <label for="p2" class="btn btn-outline-info">โรแมนติก</label>
+                                <input type="radio" id="p3" class="btn-check" name="movie" value="horror">
+                                <label for="p3" class="btn btn-outline-dark">สยองขวัญ</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="s2" class="form-label fw-bold small text-muted">แนวเพลงที่ชอบ
+                                (เลือกได้หลายแนว)</label>
+                            <select class="form-select" id="s2" multiple style="height: 100px;">
+                                <option value="pop">ป็อป</option>
+                                <option value="rock">ร็อค</option>
+                                <option value="jazz">แจ๊ส</option>
+                                <option value="classical">คลาสสิก</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <div class="d-grid gap-2 mb-4">
+                        <button type="submit" class="btn btn-primary btn-lg shadow-sm">ลงทะเบียน</button>
+                    </div>
+                </form>
+
+                <div class="border-top pt-4">
+                    <form action="/search" method="GET">
+                        <div class="input-group input-group-sm">
+                            <input type="text" name="query" class="form-control" placeholder="ค้นหาข้อมูลเพิ่มเติม...">
+                            <button class="btn btn-success" type="submit">
+                                <i class="bi bi-search"></i> ค้นหา
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('#togglePassword');
+        const passwordInput = document.querySelector('#password');
+        const icon = document.querySelector('#eyeIcon');
+
+        toggleBtn.addEventListener('click', () => {
+            const type = passwordInput.type === 'password' ? 'text' : 'password';
+            passwordInput.type = type;
+            icon.classList.toggle('bi-eye');
+            icon.classList.toggle('bi-eye-slash');
+        });
+    </script>
+
+</body>
+
+</html>
