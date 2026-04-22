@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+    <!-- 1. HTML Redirect (Meta Refresh) -->
+    <!-- แท็กนี้จะสั่งให้เบราว์เซอร์ทำการรีเฟรชหน้าเว็บไปยัง URL ที่กำหนด หลังจากผ่านไป 0 วินาที -->
+    <!-- วิธีนี้เป็นวิธีดั้งเดิมที่รองรับกับทุกเบราว์เซอร์แม้จะปิด JavaScript ไว้ -->
     <meta http-equiv="refresh" content="0; url=portfolio/index.html">
+    
     <title>AmpOS Portfolio</title>
+    
+    <!-- 2. JavaScript Redirect -->
+    <!-- ทำงานเร็วกว่า Meta Refresh เล็กน้อย โดยการเปลี่ยน URL ปลายทางของหน้าต่างปัจจุบันทันที -->
+    <!-- เราใส่ไว้ 2 แบบเพื่อเป็นแผนสำรอง (Fallback) ให้กันและกัน -->
     <script>
         window.location.href = "portfolio/index.html";
     </script>
 </head>
 <body>
-    <p>Redirecting to <a href="portfolio/index.html">AmpOS Portfolio</a>...</p>
+    <!-- 3. Fallback Link -->
+    <!-- หากผู้ใช้ใช้เบราว์เซอร์รุ่นเก่ามาก หรือปิดระบบ Redirect ไว้ จะเห็นข้อความนี้เพื่อให้กดคลิกไปเองได้ -->
+    <p>กำลังพาท่านเข้าสู่ <a href="portfolio/index.html">AmpOS Portfolio</a>...</p>
 </body>
 </html>
