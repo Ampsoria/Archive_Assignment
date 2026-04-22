@@ -2,6 +2,10 @@
 
 <div align="center">
   <img src="screenshots/real-desktop.png" alt="AmpOS Banner" width="100%">
+  <br>
+  <a href="https://ampsoria.github.io/Archive_Assignment/">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Play_Now!-2ea44f?style=for-the-badge" alt="Live Demo">
+  </a>
   <br><br>
   <strong>A Unique Desktop Metaphor Portfolio built with Vanilla HTML, CSS, and JS</strong>
   <br><br>
